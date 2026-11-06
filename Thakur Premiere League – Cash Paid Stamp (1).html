@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<title>Thakur Premiere League – Cash Paid Stamp</title>
+<style>
+  :root {
+    --blue: #1b3a8f;
+    --red: #b91c1c;
+    --bg: #eef1f8;
+    --card: #ffffff;
+    --ink: #14213d;
+    --muted: #5b6785;
+    --line: #cdd5e8;
+    --pad: #f4f6fb;
+    --accent: #1b3a8f;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) { --bg: #0f1420; --card: #1a2133; --ink: #eaf0ff; --muted: #9aa8c9; --line: #33405f; --accent: #9db4ff; }
+  }
+  :root[data-theme="dark"] { --bg: #0f1420; --card: #1a2133; --ink: #eaf0ff; --muted: #9aa8c9; --line: #33405f; --accent: #9db4ff; }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0; min-height: 100vh; background: var(--bg); color: var(--ink);
+    font-family: "Helvetica Neue", Helvetica, "Segoe UI", Roboto, Arial, sans-serif;
+    padding: max(16px, env(safe-area-inset-top)) max(16px, env(safe-area-inset-right)) max(24px, env(safe-area-inset-bottom)) max(16px, env(safe-area-inset-left));
+  }
+  main { max-width: 640px; margin: 0 auto; }
+  h1 { font-size: 1.5rem; line-height: 1.2; margin: 8px 0 4px; }
+  .sub { margin: 0 0 16px; color: var(--muted); font-size: 0.95rem; }
+  .preview { background: var(--pad); border: 1px solid var(--line); border-radius: 14px; padding: 8px; }
+  .preview svg { display: block; width: 100%; height: auto; }
+  .panel { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 16px; margin-top: 14px; }
+  label { display: block; font-weight: 600; font-size: 0.95rem; margin: 0 0 6px; }
+  .field + .field { margin-top: 14px; }
+  input {
+    width: 100%; font: inherit; font-size: 16px; color: var(--ink); background: transparent;
+    border: 1.5px solid var(--line); border-radius: 10px; padding: 12px; min-height: 48px;
+  }
+  input:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+  .actions { display: flex; gap: 10px; margin-top: 16px; flex-wrap: wrap; }
+  button {
+    flex: 1 1 150px; min-height: 50px; font: inherit; font-weight: 700; font-size: 1rem;
+    border-radius: 10px; border: 2px solid var(--blue); cursor: pointer; padding: 0 16px;
+  }
+  .primary { background: var(--blue); color: #fff; }
+  .secondary { background: transparent; color: var(--accent); border-color: var(--accent); }
+  .note { margin: 12px 0 0; color: var(--muted); font-size: 0.85rem; }
+  #status { min-height: 1.2em; margin: 10px 0 0; font-size: 0.9rem; color: var(--muted); }
+  [hidden] { display: none !important; }
+  .result { margin-top: 12px; padding-top: 16px; border-top: 1px solid var(--line); }
+  .result img { display: block; width: 100%; height: auto; background: var(--pad); border-radius: 10px; -webkit-touch-callout: default; -webkit-user-select: auto; user-select: auto; }
+  .hint { margin: 12px 0; font-size: 0.95rem; }
+  .btn {
+    display: flex; align-items: center; justify-content: center; min-height: 50px;
+    border: 2px solid var(--accent); border-radius: 10px; color: var(--accent);
+    font-weight: 700; text-decoration: none;
+  }
+
+</style>
+</head>
+<body>
+<main>
+  <h1>Cash paid stamp</h1>
+  <p class="sub">Thakur Premiere League. Fill in the details, then save or share the stamp.</p>
+
+  <div class="preview">
+    <svg id="stamp" viewBox="0 0 1400 740" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Cash paid stamp">
+      <style>
+        text { font-family: "Helvetica Neue", Helvetica, "Segoe UI", Roboto, Arial, sans-serif; fill: #1b3a8f; font-weight: 800; }
+        .lbl, .val { font-size: 46px; font-weight: 700; }
+      </style>
+      <g transform="rotate(-2.5 700 365)">
+        <rect x="95" y="95" width="1200" height="540" rx="30" fill="#fff" stroke="#1b3a8f" stroke-width="14"/>
+        <rect x="121" y="121" width="1148" height="488" rx="16" fill="none" stroke="#1b3a8f" stroke-width="4"/>
+        <polygon transform="translate(190 188)" fill="#1b3a8f" points="0,-36 8.46,-11.65 34.24,-11.12 13.7,4.45 21.16,29.12 0,14.4 -21.16,29.12 -13.7,4.45 -34.24,-11.12 -8.46,-11.65"/>
+        <polygon transform="translate(1210 188)" fill="#1b3a8f" points="0,-36 8.46,-11.65 34.24,-11.12 13.7,4.45 21.16,29.12 0,14.4 -21.16,29.12 -13.7,4.45 -34.24,-11.12 -8.46,-11.65"/>
+        <text x="255" y="212" font-size="68" textLength="880" lengthAdjust="spacing">THAKUR PREMIERE LEAGUE</text>
+        <line x1="145" y1="252" x2="1245" y2="252" stroke="#1b3a8f" stroke-width="4"/>
+        <rect x="330" y="282" width="740" height="150" rx="14" fill="#b91c1c"/>
+        <text x="420" y="391" font-size="104" textLength="560" lengthAdjust="spacing" style="fill:#fff">CASH PAID</text>
+
+        <text id="lblFrom" class="lbl" x="155" y="502">From:</text>
+        <text id="valFrom" class="val" y="502"></text>
+        <line id="ulFrom" y1="512" y2="512" stroke="#1b3a8f" stroke-width="3.5"/>
+
+        <text id="lblAmt" class="lbl" x="155" y="577">Amount: ₹</text>
+        <text id="valAmt" class="val" y="577"></text>
+        <line id="ulAmt" y1="587" y2="587" stroke="#1b3a8f" stroke-width="3.5"/>
+
+        <text id="lblDate" class="lbl" x="760" y="577">Date:</text>
+        <text id="valDate" class="val" y="577"></text>
+        <line id="ulDate" y1="587" y2="587" stroke="#1b3a8f" stroke-width="3.5"/>
+      </g>
+    </svg>
+  </div>
+
+  <div class="panel">
+    <div class="field">
+      <label for="inFrom">From</label>
+      <input id="inFrom" type="text" value="Shantanu G Thakur" autocomplete="off" autocapitalize="words" maxlength="60">
+    </div>
+    <div class="field">
+      <label for="inAmt">Amount (₹)</label>
+      <input id="inAmt" type="text" inputmode="decimal" value="1250" autocomplete="off" maxlength="12">
+    </div>
+    <div class="field">
+      <label for="inDate">Date</label>
+      <input id="inDate" type="date" value="2026-11-05">
+    </div>
+    <div class="actions">
+      <button id="btnSave" class="primary" type="button">Download PNG</button>
+      <button id="btnShare" class="secondary" type="button" hidden>Share</button>
+    </div>
+    <p id="status" role="status"></p>
+    <p class="note">The image has a transparent background around the stamp, so it works on any chat or document.</p>
+  </div>
+</main>
+
+<script>
+(function () {
+  var W = 1400, H = 740;
+  var $ = function (id) { return document.getElementById(id); };
+
+  function fit(valId, ulId, startX, maxW) {
+    var t = $(valId), u = $(ulId);
+    t.removeAttribute('textLength'); t.removeAttribute('lengthAdjust');
+    t.setAttribute('x', startX);
+    var w = t.getComputedTextLength();
+    if (w > maxW) {
+      t.setAttribute('textLength', maxW);
+      t.setAttribute('lengthAdjust', 'spacingAndGlyphs');
+      w = maxW;
+    }
+    if (w < 140) w = 140;
+    u.setAttribute('x1', startX);
+    u.setAttribute('x2', startX + w);
+  }
+
+  function amountText(raw) {
+    var s = raw.replace(/[,\s₹]/g, '');
+    if (/^\d+(\.\d{1,2})?$/.test(s)) {
+      s = Number(s).toLocaleString('en-IN', { maximumFractionDigits: 2 });
+    } else {
+      s = raw.trim();
+    }
+    return s ? s + '/-' : '';
+  }
+
+  function dateText(v) {
+    var p = v.split('-');
+    return p.length === 3 ? p[2] + '/' + p[1] + '/' + p[0] : '';
+  }
+
+  function render() {
+    $('valFrom').textContent = $('inFrom').value.trim();
+    $('valAmt').textContent = amountText($('inAmt').value);
+    $('valDate').textContent = dateText($('inDate').value);
+
+    var gap = 14;
+    var xFrom = 155 + $('lblFrom').getComputedTextLength() + gap;
+    fit('valFrom', 'ulFrom', xFrom, 1235 - xFrom);
+
+    var xAmt = 155 + $('lblAmt').getComputedTextLength() + gap;
+    fit('valAmt', 'ulAmt', xAmt, 700 - xAmt);
+
+    var xDate = 760 + $('lblDate').getComputedTextLength() + gap;
+    fit('valDate', 'ulDate', xDate, 1235 - xDate);
+  }
+
+  ['inFrom', 'inAmt', 'inDate'].forEach(function (id) {
+    $(id).addEventListener('input', function () { say(''); render(); });
+    $(id).addEventListener('change', function () { say(''); render(); });
+  });
+
+  function toCanvas() {
+    return new Promise(function (resolve, reject) {
+      var scale = 2;
+      var svg = $('stamp').cloneNode(true);
+      svg.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
+      svg.setAttribute('width', W * scale);
+      svg.setAttribute('height', H * scale);
+      var xml = new XMLSerializer().serializeToString(svg);
+      var img = new Image();
+      img.onload = function () {
+        var c = document.createElement('canvas');
+        c.width = W * scale; c.height = H * scale;
+        c.getContext('2d').drawImage(img, 0, 0, c.width, c.height);
+        resolve(c);
+      };
+      img.onerror = reject;
+      img.src = 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(xml);
+    });
+  }
+
+  function toBlob() {
+    return toCanvas().then(function (c) {
+      return new Promise(function (resolve, reject) {
+        c.toBlob(function (b) { b ? resolve(b) : reject(new Error('blob')); }, 'image/png');
+      });
+    });
+  }
+
+  function fileName() {
+    var n = $('inFrom').value.trim().replace(/[^\w]+/g, '-').replace(/^-|-$/g, '');
+    return 'TPL-cash-paid' + (n ? '-' + n : '') + '.png';
+  }
+
+  function say(msg) { $('status').textContent = msg; }
+
+  $('btnSave').addEventListener('click', function () {
+    say('Preparing image...');
+    toBlob().then(function (b) {
+      if (dlCap) {
+        return dlCap.save({ filename: fileName(), data: b }).then(function () { say('Saved.'); });
+      }
+      var a = document.createElement('a');
+      a.href = URL.createObjectURL(b);
+      a.download = fileName();
+      document.body.appendChild(a); a.click(); a.remove();
+      setTimeout(function () { URL.revokeObjectURL(a.href); }, 4000);
+      say('Saved. Check your Downloads or Photos.');
+    }).catch(function (err) {
+      say(err && err.code === 'declined' ? '' : 'Could not save the image. Try again.');
+    });
+  });
+
+  var canShareFiles = false;
+  try {
+    canShareFiles = !!(navigator.canShare && navigator.canShare({ files: [new File([''], 'a.png', { type: 'image/png' })] }));
+  } catch (e) {}
+  if (canShareFiles) {
+    $('btnShare').hidden = false;
+    $('btnShare').addEventListener('click', function () {
+      toBlob().then(function (b) {
+        var f = new File([b], fileName(), { type: 'image/png' });
+        return navigator.share({ files: [f], title: 'Cash paid - Thakur Premiere League' });
+      }).then(function () { say('Shared.'); })
+        .catch(function (e) { if (!e || e.name !== 'AbortError') say('Sharing is not available. Use Download PNG.'); });
+    });
+  }
+
+  var dlCap = null;
+  if (window.claude && typeof window.claude.use === 'function') {
+    window.claude.use('downloads').then(function (d) { dlCap = d; }).catch(function () {});
+  }
+
+  render();
+  window.addEventListener('load', render);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(render);
+})();
+</script>
+</body>
+</html>
